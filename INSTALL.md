@@ -7,6 +7,20 @@ The release zip contains Universal binaries for Apple Silicon and Intel Macs.
 Open `GrangrandMA.app`, allow microphone access, and select your microphone under
 **Options > Audio/MIDI Settings**. Headphones are strongly recommended to avoid feedback.
 
+Note: If you encounter an issue with trying to open the standalone file on Mac; that is expected.
+
+
+You'll need to instruct MacOS to [remove the quarantine attribute](//superuser.com/questions/28384/what-should-i-do-about-com-apple-quarantine). 
+
+
+Open your terminal and run the following command:
+
+```
+sudo xattr -rd com.apple.quarantine <YOUR_PATH_TO_STANDALONE>/GrangrandMA.app
+```
+
+Replace `<YOUR_PATH_TO_STANDALONE>` with the path to the GrangrandMA app. 
+
 ## VST3
 
 Copy the entire `GrangrandMA.vst3` bundle to:
