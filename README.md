@@ -13,6 +13,12 @@ The release contains Universal binaries for both Apple Silicon and Intel Macs:
 
 See [INSTALL.md](INSTALL.md) for Max/MSP setup and macOS troubleshooting.
 
+## Native Max/MSP version
+
+The [`Max`](Max) folder contains a native live-input granulator that does not load the VST3 and
+uses only standard Max/MSP objects. Open [`Max/GrangrandMA.maxpat`](Max/GrangrandMA.maxpat) in
+Max 8 or Max 9, enable its **AUDIO** button, and speak into input 1.
+
 ## Build
 
 The project uses an installed JUCE CMake package when available; otherwise CMake
